@@ -1,15 +1,12 @@
 const locationInput = document.querySelector('input')
 const submitButton = document.querySelector('button')
 
-
-
 submitButton.addEventListener("click", function (e) {
     let userLocationInput = window.prompt('New location:')
-    url = `http://api.openweathermap.org/data/2.5/weather?q=${userLocationInput}&APPID=e3320e2862e2dc7be9337435a68c5aaf`
+    url = `https://api.openweathermap.org/data/2.5/weather?q=${userLocationInput}&APPID=e3320e2862e2dc7be9337435a68c5aaf`
     // console.log(url)
     getLocationData()
 });
-
 
 function getLocationData() {
     const location = document.getElementById('location')
